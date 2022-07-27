@@ -1,14 +1,19 @@
+::-webkit-scrollbar {
+    display: none;
+}
 .chat-bar-collapsible {
     position: fixed;
     bottom: 0;
     z-index: 1000;
     right: 50px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    /* transition: none; */
+    box-shadow: var(--box-shadow-1);
 }
 
+
 .collapsible {
-    background-color: rgb(82, 151, 255);
-    color: white;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
     cursor: pointer;
     padding: 18px;
     width: 350px;
@@ -16,15 +21,22 @@
     outline: none;
     font-size: 18px;
     border-radius: 10px 10px 0px 0px;
-    border: 3px solid white;
+    /* border: 3px solid var(--color-white); */
     border-bottom: none;
+    transition: none;
+    text-align: center;
+
+}
+.chat-bar-collapsible .active {
+    -webkit-animation: none;
+    animation:none;
 }
 
 .content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
+    background-color: var(--color-white);
 }
 
 .full-chat-block {
@@ -168,6 +180,6 @@
         width: 100%;
         border: 0px;
         border-top: 3px solid white;
-        border-radius: 0px;
+        /* border-radius: 0px; */
     }
 }

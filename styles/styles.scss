@@ -31,7 +31,7 @@
     --color-grey-2: #6c7983;
     --color-grey-3: #6c7983;
     --color-grey-4: #454e56;
-    --color-grey-5: #f8f8f8;
+    --color-grey-5: #cac9c9;
     --color-grey-6: #12181b;
 }
 
@@ -570,31 +570,39 @@ section {
     .right-contact {
         flex: 3;
         margin-left: 3rem;
+        width: 100%;
         .input-control {
             margin: 1.5rem 0;
-            input, textarea {
-                border-radius: 30px;
-                font-weight: inherit;
-                font-size: inherit;
-                font-family: inherit;
-                padding: .8rem 1.1rem;
-                outline: none;
+            fieldset{
                 border: none;
-                background-color: var(--color-grey-5);
-                width: 100%;
-                color: var(--color-white);
-                resize: none;
+                input, textarea {
+                    border-radius: 30px;
+                    font-weight: inherit;
+                    font-size: inherit;
+                    font-family: inherit;
+                    padding: .8rem 1.1rem;
+                    outline: none;
+                    border: none;
+                    background-color: var(--color-grey-5);
+                    width: 100%;
+                    color: var(--color-white);
+                    resize: none;
+                }
             }
         }
         .i-c-2 {
             display: flex;
-            :last-child{
-                margin-left: 1.5rem;
+            #Email{
+                margin-left: 4.6rem;
             }
         }
         .submit-btn {
             display: flex;
             justify-content: flex-start;
+            fieldset{
+                border: none;
+                
+            }
         }
     }
 }
@@ -615,7 +623,18 @@ section {
     align-self: flex-start;
     align-items: center;
     overflow: hidden;
-    .btn-text { padding: 0 2rem; }
+    .btn-text { 
+        padding: 0 1rem; 
+        button{
+            width: 100%;
+            font-size: inherit;
+            font-family: inherit;
+            padding: 0 2rem;
+            color: var(--color-secondary);
+            background-color: var(--color-primary);
+            border: none;
+        }
+    }
     .btn-icon {
         background-color: var(--color-secondary);
         display: flex;
