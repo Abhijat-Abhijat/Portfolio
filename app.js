@@ -17,7 +17,7 @@ function postToGoogle() {
     var field2 = $("#Email").val();
     var field3 = $("#Subject").val();
     var field4 = $("#Message").val();
-
+    window.location.reload(true);
     $.ajax({
       url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSeQWOnMCUWDMka_mgdVG09jZgZ94p8Z5p9piVNGh2VjhYnDYw/formResponse",
         
@@ -38,4 +38,5 @@ function postToGoogle() {
       }
     });
     return false;
+    
   }

@@ -628,7 +628,7 @@ section {
   display: flex;
 }
 .contact-content-con .right-contact .i-c-2 #Email {
-  margin-left: 4.6rem;
+  margin-left: 1rem;
 }
 .contact-content-con .right-contact .submit-btn {
   display: flex;
@@ -808,7 +808,7 @@ section {
   .contact-content-con .right-contact .i-c-2 {
     flex-direction: column;
   }
-  .contact-content-con .right-contact .i-c-2 :last-child {
+  .contact-content-con .right-contact .i-c-2 #Email {
     margin-left: 0;
     margin-top: 1.5rem;
   }
@@ -853,7 +853,7 @@ section {
   .contact-content-con .right-contact .i-c-2 {
     flex-direction: column;
   }
-  .contact-content-con .right-contact .i-c-2 :last-child {
+  .contact-content-con .right-contact .i-c-2 #Email {
     margin-left: 0;
     margin-top: 1.5rem;
   }
