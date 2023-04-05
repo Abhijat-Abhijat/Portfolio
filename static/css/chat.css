@@ -1,3 +1,4 @@
+@import url("/Portfolio/styles/styles.scss");
 ::-webkit-scrollbar {
     display: none;
 }
@@ -6,13 +7,16 @@
     bottom: 0;
     z-index: 1000;
     right: 50px;
+    border: none;
+    outline:none;
+    /* background-color: #000; */
     /* transition: none; */
-    box-shadow: var(--box-shadow-1);
+    /* box-shadow: var(--box-shadow-1); */
 }
 
 
 .collapsible {
-    background-color: var(--color-secondary);
+    background-color: transparent;
     color: var(--color-white);
     cursor: pointer;
     padding: 18px;
@@ -21,7 +25,7 @@
     outline: none;
     font-size: 18px;
     border-radius: 10px 10px 0px 0px;
-    /* border: 3px solid var(--color-white); */
+    border: 1px solid var(--color-secondary);
     border-bottom: none;
     transition: none;
     text-align: center;
@@ -30,8 +34,26 @@
 .chat-bar-collapsible .active {
     -webkit-animation: none;
     animation:none;
+    background-color: var(--color-secondary);
 }
-
+#chatbox{
+    /* overflow-y: scroll; */
+    overflow-anchor: none;
+    overflow-y: scroll;
+     height: 40vh;
+    /* animation: floatup .5s forwards; */
+}
+#chat-bar-bottom{
+    overflow-anchor: auto;
+    height: 1px;
+}
+#chat-timestamp{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-secondary);
+    margin: 0;
+    padding: 0;
+}
 .content {
     max-height: 0;
     overflow: hidden;
@@ -41,12 +63,14 @@
 
 .full-chat-block {
     width: 350px;
-    background: white;
+    background: var(--color-primary);
     text-align: center;
-    overflow: auto;
+    /* overflow: auto; */
     scrollbar-width: none;
     height: max-content;
     transition: max-height 0.2s ease-out;
+    border: 1px solid var(--color-secondary);
+    /* overflow-y: scroll; */
 }
 
 .outer-container {
@@ -63,6 +87,7 @@
     left: 0;
     scroll-behavior: smooth;
     hyphens: auto;
+    /* background-color: #000; */
 }
 
 .chat-container::-webkit-scrollbar {
@@ -79,6 +104,8 @@
     background-color: rgb(235, 235, 235);
     border-radius: 10px 10px 0px 0px;
     padding: 10px 0px 10px 10px;
+    /* position: fixed; */
+    /* position: sticky; */
 }
 
 .chat-bar-icons {
